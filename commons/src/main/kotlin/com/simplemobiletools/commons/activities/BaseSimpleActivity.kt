@@ -50,7 +50,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
         }
 
         super.onCreate(savedInstanceState)
-        if (!packageName.startsWith("com.simplemobiletools.", true)) {
+        if (!packageName.startsWith("com.simplemobiletools123.", true)) {
             if ((0..50).random() == 10 || baseConfig.appRunCount % 100 == 0) {
                 val label = "You are using a fake version of the app. For your own safety download the original one from www.simplemobiletools.com. Thanks"
                 ConfirmationDialog(this, label, positive = R.string.ok, negative = 0) {
